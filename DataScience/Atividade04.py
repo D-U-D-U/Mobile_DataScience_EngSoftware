@@ -14,7 +14,7 @@ df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
 # 02 Transformação de dados categóricos
 le = LabelEncoder()
 df['Sex'] = le.fit_transform(df['Sex'])  # male=1, female=0
-df['Embarked'] = le.fit_transform(df['Embarked'])  # C=0, Q=1, S=2
+df['Embarked'] = le.fit_transform(df['Embarked'])
 
 # 03 Padronização de dados
 scaler = StandardScaler()
